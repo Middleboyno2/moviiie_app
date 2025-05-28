@@ -1,0 +1,1 @@
+This pakage contains moviiie app localization
