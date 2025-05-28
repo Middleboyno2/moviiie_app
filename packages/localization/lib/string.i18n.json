@@ -1,0 +1,12 @@
+{
+  "applicationName": "Mr.Moviiie",
+  "main": {
+    "tab": {
+      "home": "Home",
+      "search": "Search",
+      "video": "Video",
+      "profile": "Profile"
+    }
+  }
+
+}

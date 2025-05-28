@@ -1,0 +1,18 @@
+name: localization
+description: This package contains localization.
+
+environment:
+  sdk: ^3.0.0
+
+dependencies:
+  slang: ^4.7.1
+  slang_flutter: ^4.7.0
+
+dev_dependencies:
+  # chuẩn hoá quy tắc dart linter
+  thunder_analysis:
+    git:
+      url: https://github.com/khamidjon/thunder-analysis
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.15
+  slang_build_runner: ^4.7.0
