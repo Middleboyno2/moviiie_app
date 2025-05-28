@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:localization/strings.g.dart';
 
 class CustomBottomNavigationBar extends StatefulWidget {
   final PageController controller;
@@ -27,19 +28,19 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
       items: [
         BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            label: 'Home'
+            label: context.t.main.tab.home
         ),
         BottomNavigationBarItem(
             icon: Icon(Icons.search),
-            label: 'Search'
+            label: context.t.main.tab.search
         ),
         BottomNavigationBarItem(
             icon: Icon(Icons.slow_motion_video),
-            label: 'Video'
+            label: context.t.main.tab.video
         ),
         BottomNavigationBarItem(
             icon: Icon(Icons.person_pin),
-            label: 'Profile'
+            label: context.t.main.tab.profile
         ),
       ]
     );
