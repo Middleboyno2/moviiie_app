@@ -40,6 +40,30 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 
 	// Translations
 	String get applicationName => 'Mr.Moviiie';
+	late final TranslationsMainVi main = TranslationsMainVi.internal(_root);
+}
+
+// Path: main
+class TranslationsMainVi {
+	TranslationsMainVi.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+	late final TranslationsMainTabVi tab = TranslationsMainTabVi.internal(_root);
+}
+
+// Path: main.tab
+class TranslationsMainTabVi {
+	TranslationsMainTabVi.internal(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+	String get home => 'Home';
+	String get search => 'Search';
+	String get video => 'Video';
+	String get profile => 'Profile';
 }
 
 /// Flat map(s) containing all translations.
@@ -48,6 +72,10 @@ extension on Translations {
 	dynamic _flatMapFunction(String path) {
 		switch (path) {
 			case 'applicationName': return 'Mr.Moviiie';
+			case 'main.tab.home': return 'Home';
+			case 'main.tab.search': return 'Search';
+			case 'main.tab.video': return 'Video';
+			case 'main.tab.profile': return 'Profile';
 			default: return null;
 		}
 	}
