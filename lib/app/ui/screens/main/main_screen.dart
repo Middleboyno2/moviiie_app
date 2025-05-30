@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:moviiie/app/ui/screens/home/home_screen.dart';
+import 'package:moviiie/app/ui/screens/home/home_screen_view_model.dart';
 import 'package:moviiie/app/ui/screens/main/main_screen_view_model.dart';
 import 'package:moviiie/app/ui/screens/profile/profile_screen.dart';
 import 'package:moviiie/app/ui/screens/search/search_screen.dart';
@@ -22,7 +23,7 @@ class _MainScreenState extends State<MainScreen> {
       body: PageView(
         controller: _pageController,
         children: [
-          HomeScreen(),
+          HomeScreen(viewModel: HomeScreenViewModel(),),
           SearchScreen(),
           VideoScreen(),
           ProfileScreen()

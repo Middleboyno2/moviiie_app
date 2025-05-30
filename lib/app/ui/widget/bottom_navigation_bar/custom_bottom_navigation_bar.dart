@@ -16,8 +16,8 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
     return BottomNavigationBar(
       selectedItemColor: Colors.black,
       unselectedItemColor: Colors.grey,
-      showSelectedLabels: true,
-      type: BottomNavigationBarType.fixed,
+      //showSelectedLabels: true,
+      //type: BottomNavigationBarType.fixed,
       currentIndex: currentPage,
       onTap: (index){
         widget.controller.jumpToPage(index);
@@ -27,7 +27,9 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
       },
       items: [
         BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Icon(
+              Icons.home,
+            ),
             label: context.t.main.tab.home
         ),
         BottomNavigationBarItem(
